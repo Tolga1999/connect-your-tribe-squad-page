@@ -10,6 +10,8 @@
   --background-color-white: #FFFF;
   --background-color-grey: #2B2B2B;
   --text-color-white: #FFFF;
+  --text-color-black: #000000 ;
+  --background-color-purple: #B1AFFF;
 }
 
 /* import fonts */
@@ -23,8 +25,15 @@
 /* inter bold */
 @font-face {
   font-family: inter-semibold;
-  src: url("../assets/Inter-Bold.ttf");
+  src: url("../assets/Inter-SemiBold.ttf");
 }
+
+/* nunito regular */
+@font-face {
+  font-family: nunito-regular;
+  src: url("../assets/Nunito-Regular.ttf");
+}
+
 
 body {
   background-color: var(--background-color-grey);
@@ -32,7 +41,7 @@ body {
 }
 
 /* this is the card with all content */
-section{
+.card-container{
   display: flex;
   flex-direction: column;
   background-color: var(--background-color-white);
@@ -93,3 +102,48 @@ svg{
   right: 0.75em;
   bottom: 0.33em;
 }
+/* form for searches END */
+
+/* student container */
+.student-container{
+  display: flex;
+  background-color: var(--background-color-purple);
+  border-radius: 0.5em;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.student-image{
+  width: 63px;
+  border-radius: 0.5em;
+}
+
+/* student info and links */
+.student-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.student-name{
+  font-size: 1.25em;
+  font-weight: normal;
+  /* font-family: inter-semibold, sans-serif; */
+}
+
+.student-website-links{
+  margin-top: 0.5em;
+}
+
+.student-website-links > a{
+  text-decoration: none;
+  background-color: var(--background-color-white);
+  color: var(--text-color-black);
+  padding: 0.3em 0.5em;
+  font-size: 0.75em;
+  border-radius: 0.75em;
+  font-family: nunito-regular, sans-serif;
+}
+/* student container END */

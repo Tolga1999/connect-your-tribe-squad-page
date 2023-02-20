@@ -1,7 +1,7 @@
 <%- include('./partials/head') %>
 
 <main>
-  <section>
+  <section class="card-container">
     <div class="logo-title-container">
       <img class="logo" src="<%= member.avatar %>" alt="gitsearch logo">
       <div class="title">
@@ -19,6 +19,18 @@
        </svg>
       <!-- </label> -->
     </form>
+
+    <!-- student container for searched students -->
+    <section class="student-container">
+      <img class="student-image" src="<%= member.avatar %>" alt="student">
+      <div class="student-info">
+        <h2 class="student-name">Tolga Doganer</h2>
+        <div class="student-website-links">
+          <a href="<%= member.website %>"><%= member.gitHubHandle %></a>
+          <a href="<%= member.website %>"><%= member.gitHubHandle %></a>
+        </div>
+      </div>
+    </section>
   </section>
 </main>
 
