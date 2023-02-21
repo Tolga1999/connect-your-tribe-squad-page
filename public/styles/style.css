@@ -12,6 +12,7 @@
   --text-color-white: #FFFF;
   --text-color-black: #000000 ;
   --background-color-purple: #B1AFFF;
+  --background-color-green: #C8FFD4;
 }
 
 /* import fonts */
@@ -49,7 +50,7 @@ body {
   margin-top: 5em;
   padding: 3em 2em;
   padding-top: 4.25em;
-  padding-bottom: 1.75em;
+  padding-bottom: 1.5em;
   border-radius: 0.5em;
 }
 
@@ -75,11 +76,12 @@ body {
 .title > h1{
   font-size: 2.5em;
   font-weight: normal;
-  /* height: 57.5%; */
+  margin-bottom: -0.075em
 }
 
 .title > span{
   font-size: 0.7em;
+  margin-left: 0.4em;
 }
 
 /* form for searches */
@@ -104,18 +106,43 @@ svg{
 }
 /* form for searches END */
 
+/* filter container */
+.filter-container{
+  margin-top: 1.25em;
+  display: flex;
+}
+
+.filter-container > a{
+  text-decoration: none;
+  background-color: var(--background-color-green);
+  color: var(--text-color-black);
+  padding: 0.3em 0.8em;
+  font-size: 0.7em;
+  border-radius: 0.75em;
+  font-family: nunito-regular, sans-serif;
+  margin-left: 0.75em;
+}
+/* filter container END */
+
 /* student container */
 .student-container{
   display: flex;
   background-color: var(--background-color-purple);
   border-radius: 0.5em;
-  margin: 1em 0;
+  margin-top: 1em;
   padding: 1em;
+  justify-content: center;
+}
+
+/* margin-top first student container smaller for filter container */
+section:nth-child(4){
+  margin-top: 0.75em;
 }
 
 .student-image{
   width: 63px;
   border-radius: 0.5em;
+  margin-left: 0.3em  ;
 }
 
 /* student info and links */
@@ -124,13 +151,15 @@ svg{
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 1em;
+  flex-grow: 0.75;
+  margin-bottom: 0.2em;
 }
 
 .student-name{
   font-size: 1.25em;
+  font-family: inter-regular, sans-serif;
   font-weight: normal;
-  /* font-family: inter-semibold, sans-serif; */
+  margin-left: 0.4em;
 }
 
 .student-website-links{
@@ -141,8 +170,8 @@ svg{
   text-decoration: none;
   background-color: var(--background-color-white);
   color: var(--text-color-black);
-  padding: 0.3em 0.5em;
-  font-size: 0.75em;
+  padding: 0.3em 0.6em;
+  font-size: 0.7em;
   border-radius: 0.75em;
   font-family: nunito-regular, sans-serif;
 }
