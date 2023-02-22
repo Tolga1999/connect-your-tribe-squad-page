@@ -198,6 +198,7 @@ section:nth-child(2) {
 .student-image,
 .placeholder-image {
   min-width: 63px;
+  max-width: 63px;
   min-height: 63px;
   max-height: 63px;
   object-fit: cover;
