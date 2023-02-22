@@ -37,7 +37,7 @@
 
     <!-- Hier komen de members -->
     <% const members = squad.members %>
-    <% for (let member = 0; member < 10; member++){ %>
+    <% for (let member = 0; member < members.length; member++){ %>
     <section class="student-container">
       <% if (members[member].avatar) { %>
       <img class="student-image" src="<%= members[member].avatar %>" alt="student">
