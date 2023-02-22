@@ -50,6 +50,7 @@ header{
   background-color: var(--background-color-white);
   padding-left: 0;
   padding-right: 0;
+  padding-top: 1em;
 }
 /* header end */
 
@@ -61,7 +62,7 @@ header{
   margin: 1.5em;
   margin-top: 5em;
   padding: 3em 2em;
-  padding-top: 4.25em;
+  padding-top: 3.25em;
   padding-bottom: 1.5em;
   border-radius: 0.5em;
 }
