@@ -11,8 +11,10 @@
   --background-color-grey: #2B2B2B;
   --text-color-white: #FFFF;
   --text-color-black: #000000 ;
-  --background-color-purple: #B1AFFF;
+  --background-color-yellow: #FDFDBD;
   --background-color-green: #C8FFD4;
+  --background-color-blue: #B8E8FC;
+  --background-color-purple: #B1AFFF;
 }
 
 /* import fonts */
@@ -40,6 +42,16 @@ body {
   background-color: var(--background-color-grey);
   font-family: inter-regular, sans-serif;
 }
+
+/* header */
+header{
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color-white);
+  padding-left: 0;
+  padding-right: 0;
+}
+/* header end */
 
 /* this is the card with all content */
 .card-container{
@@ -121,6 +133,7 @@ svg{
   border-radius: 0.75em;
   font-family: nunito-regular, sans-serif;
   margin-left: 0.75em;
+  margin-bottom: 1rem;
 }
 /* filter container END */
 
@@ -135,31 +148,39 @@ svg{
 }
 
 /* margin-top first student container smaller for filter container */
-section:nth-child(4){
-  margin-top: 0.75em;
+section:nth-child(2){
+  margin-top: 0em;
 }
 
-.student-image{
+.student-image, .placeholder-image{
   width: 63px;
+  min-height: 63px;
+  max-height: 63px;
+  object-fit: cover;
   border-radius: 0.5em;
-  margin-left: 0.3em  ;
+}
+
+/* placeholder image if no image */
+.placeholder-image{
+  opacity: 0.5;
 }
 
 /* student info and links */
 .student-info{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-end;
-  align-items: center;
-  flex-grow: 0.75;
+  flex-grow: 0.25;
   margin-bottom: 0.2em;
+  margin-left: 1em;
+  width: 75%;
 }
 
 .student-name{
   font-size: 1.25em;
   font-family: inter-regular, sans-serif;
   font-weight: normal;
-  margin-left: 0.4em;
 }
 
 .student-website-links{
@@ -176,3 +197,14 @@ section:nth-child(4){
   font-family: nunito-regular, sans-serif;
 }
 /* student container END */
+
+/* JS CSS */
+.container-off{
+  display: none;
+}
+
+/* only name default off */
+.only-name{
+  display: none;
+}
+/* JS CSS END */

@@ -4,12 +4,13 @@ import express from 'express'
 // Maak een nieuwe express app aan
 const app = express()
 
-// maak een const voor de API
-const url = 'https://whois.fdnd.nl/api/v1/member/tolga-doganer';
-// wacht op de url totdat je de data krijgt en DAN verander je de response van je url naar JSON
-const data = await fetch(url).then(response => response.json());
+// maak een const voor de API, url voor squad A
+const urlMembers = 'https://whois.fdnd.nl/api/v1/squad/squad-a-2022';
+// const urlMyData = 'https://whois.fdnd.nl/api/v1/member/tolga-doganer';
 
-console.log(data);
+// wacht op de url totdat je de data krijgt en DAN verander je de response van je url naar JSON
+const dataMembers = await fetch(urlMembers).then(response => response.json());
+// const dataMyData = await fetch(urlMyData).then(response => response.json());
 
 // Stel ejs in als template engine en geef de 'views' map door
 app.set('view engine', 'ejs')
@@ -19,9 +20,9 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 // Maak een route voor de index
-app.get('/', function (req, res) {
-// render de pagina maar ook de data van de api door naar view
-  res.render('index', data)
+app.get('/', function (request, response) {
+// render de pagina maar ook de data van de API door naar view
+  response.render('index', dataMembers)
 })
 
 // Stel het poortnummer in waar express op gaat luisteren
