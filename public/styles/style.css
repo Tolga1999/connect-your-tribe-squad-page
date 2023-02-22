@@ -10,7 +10,7 @@
   --background-color-white: #FFFF;
   --background-color-grey: #2B2B2B;
   --text-color-white: #FFFF;
-  --text-color-black: #000000 ;
+  --text-color-black: #000000;
   --background-color-yellow: #FDFDBD;
   --background-color-green: #C8FFD4;
   --background-color-blue: #B8E8FC;
@@ -44,7 +44,7 @@ body {
 }
 
 /* header */
-header{
+header {
   position: sticky;
   top: 0;
   background-color: var(--background-color-white);
@@ -53,10 +53,11 @@ header{
   padding-top: 1em;
   z-index: 3;
 }
+
 /* header end */
 
 /* this is the card with all content */
-.card-container{
+.card-container {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color-white);
@@ -68,42 +69,42 @@ header{
   border-radius: 0.5em;
 }
 
-.logo-title-container{
+.logo-title-container {
   display: flex;
   justify-content: flex-start;
 }
 
-.logo{
+.logo {
   width: 77px;
   height: 70px;
   border-radius: 0.5em;
   object-fit: cover;
 }
 
-.title{
+.title {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-left: 1em;
 }
 
-.title > h1{
+.title>h1 {
   font-size: 2.5em;
   font-weight: normal;
   margin-bottom: -0.075em
 }
 
-.title > span{
+.title>span {
   font-size: 0.7em;
   margin-left: 0.4em;
 }
 
 /* form for searches */
-form{
+form {
   position: relative;
 }
 
-input{
+input {
   margin-top: 1.25em;
   padding: 1em;
   width: 100%;
@@ -113,20 +114,21 @@ input{
   font-family: inter-regular, sans-serif;
 }
 
-svg{
+svg {
   position: absolute;
   right: 0.75em;
   bottom: 0.33em;
 }
+
 /* form for searches END */
 
 /* filter container */
-.filter-container{
+.filter-container {
   margin-top: 1.25em;
   display: flex;
 }
 
-.filter-container > a{
+.filter-container>a {
   text-decoration: none;
   background-color: var(--background-color-green);
   color: var(--text-color-black);
@@ -137,10 +139,11 @@ svg{
   margin-left: 0.75em;
   margin-bottom: 1rem;
 }
+
 /* filter container END */
 
 /* student container */
-.student-container{
+.student-container {
   display: flex;
   background-color: var(--background-color-purple);
   border-radius: 0.5em;
@@ -149,13 +152,52 @@ svg{
   justify-content: center;
 }
 
+.student-container:nth-child(2),
+.student-container:nth-child(6),
+.student-container:nth-child(10),
+.student-container:nth-child(14),
+.student-container:nth-child(18),
+.student-container:nth-child(22) {
+  background-color: var(--background-color-purple);
+}
+
+.student-container:nth-child(3),
+.student-container:nth-child(7),
+.student-container:nth-child(11),
+.student-container:nth-child(15),
+.student-container:nth-child(19),
+.student-container:nth-child(23) {
+  background-color: var(--background-color-blue);
+}
+
+.student-container:nth-child(4),
+.student-container:nth-child(8),
+.student-container:nth-child(12),
+.student-container:nth-child(16),
+.student-container:nth-child(20),
+.student-container:nth-child(24) {
+  background-color: var(--background-color-green);
+}
+
+
+.student-container:nth-child(5),
+.student-container:nth-child(9),
+.student-container:nth-child(13),
+.student-container:nth-child(17),
+.student-container:nth-child(21),
+.student-container:nth-child(25) {
+  background-color: var(--background-color-yellow);
+}
+
+
 /* margin-top first student container smaller for filter container */
-section:nth-child(2){
+section:nth-child(2) {
   margin-top: 0em;
 }
 
-.student-image, .placeholder-image{
-  width: 63px;
+.student-image,
+.placeholder-image {
+  min-width: 63px;
   min-height: 63px;
   max-height: 63px;
   object-fit: cover;
@@ -163,12 +205,12 @@ section:nth-child(2){
 }
 
 /* placeholder image if no image */
-.placeholder-image{
+.placeholder-image {
   opacity: 0.5;
 }
 
 /* student info and links */
-.student-info{
+.student-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -179,17 +221,17 @@ section:nth-child(2){
   width: 75%;
 }
 
-.student-name{
+.student-name {
   font-size: 1.25em;
   font-family: inter-regular, sans-serif;
   font-weight: normal;
 }
 
-.student-website-links{
+.student-website-links {
   margin-top: 0.5em;
 }
 
-.student-website-links > a{
+.student-website-links>a {
   text-decoration: none;
   background-color: var(--background-color-white);
   color: var(--text-color-black);
@@ -198,15 +240,17 @@ section:nth-child(2){
   border-radius: 0.75em;
   font-family: nunito-regular, sans-serif;
 }
+
 /* student container END */
 
 /* JS CSS */
-.container-off{
+.container-off {
   display: none;
 }
 
 /* only name default off */
-.only-name{
+.only-name {
   display: none;
 }
+
 /* JS CSS END */
