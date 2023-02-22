@@ -3,8 +3,9 @@
 let form = document.querySelector("form");
 let studentContainer = document.querySelectorAll(".student-container");
 
-// loop the names
+// input event for form
 form.addEventListener('input', function (e) {
+    // prevent default submit
     e.preventDefault();
 
     // selecteer input
@@ -12,7 +13,7 @@ form.addEventListener('input', function (e) {
 
     for (let i = 0; i < studentContainer.length; i++) {
         
-        // search on first name
+        // if studentcontainer h2 doesnt include input => make the containers invisible
         if (!studentContainer[i].children[1].children[1].innerHTML.toUpperCase().includes(input)) {
             studentContainer[i].classList.add("container-off");
         } else {
