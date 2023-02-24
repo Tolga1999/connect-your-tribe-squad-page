@@ -14,7 +14,7 @@ form.addEventListener('input', function (e) {
     for (let i = 0; i < studentContainer.length; i++) {
         
         // if studentcontainer h2 doesnt include input => make the containers invisible
-        if (!studentContainer[i].children[1].children[1].innerHTML.toUpperCase().includes(input)) {
+        if (!studentContainer[i].innerText.toUpperCase().includes(input)) {
             studentContainer[i].classList.add("container-off");
         } else {
             studentContainer[i].classList.remove("container-off")
