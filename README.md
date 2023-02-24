@@ -41,10 +41,24 @@ Tot slot hebben wij gebruik gemaakt van Express. Express is een framework dat me
 
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+Voordat je de applicatie kan runnen moet je node runnen op je lokale computer, Node kan je downloaden op de volgende website: https://nodejs.org/en/.
+Download de stabiele versie 18.14.0 LTS, open je terminal binnen de code editior (zoals VS code) en run de volgende command lines:
+
+- NPM install, dit om express, ejs en alle andere afhankelijkheden te downloaden.
+- NPM start om je applicatie te runnen, je lokale server wordt meestal gerunned op port 8000.
 
 ## Gebruik
+De volgende stappen kan je nemen om gebruik te maken van Gitsearch:
+
+1. Ga naar de url in deze readme, lanceer Gitsearch.
+2. Klik op de inputveld en zoek naar een student.
+3. klik op de Github naam (zo ga je naar een externe github profiel page) of klik op de squad naam (dit geeft een random website dat de gebruiker zelf heeft ingevuld).
 
 ## Bronnen
+- Node download: https://nodejs.org/en/
+- Express/node introductie: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+- FDND API: https://whois.fdnd.nl/
+- EJS: https://ejs.co/
 
 ## Licentie
 
