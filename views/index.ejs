@@ -38,8 +38,9 @@
 
     <!-- student container for searched students -->
     <div class="desktop-student-containers">
+      <!-- een const variable maken voor de fori loop -->
       <% const members = squad.members %>
-
+      <!-- een fori loop dat voor elke member een student-container maakt + de data van een student toont -->
       <% for (let member = 0; member < members.length; member++){ %>
       <section class="student-container">
         <% if (members[member].avatar) { %>
@@ -48,8 +49,6 @@
         <img class="placeholder-image" src="./assets/112855878.png" alt="Placeholder avatar" />
         <% } %>
         <div class="student-info">
-          <!-- staat standaard uit -->
-          <span class="only-name"><%= members[member].name %></span>
           <h2 class="student-name"><%= members[member].name %> <%= members[member].surname %></h2>
           <div class="student-website-links">
             <a href="https://github.com/<%= members[member].gitHubHandle %>"><%= members[member].gitHubHandle %></a>
