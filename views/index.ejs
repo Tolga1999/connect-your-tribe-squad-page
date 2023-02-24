@@ -21,6 +21,11 @@
           <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
           <path d="M21 21l-6 -6"></path>
         </svg>
+        <svg class="desktop-svg" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+          <path d="M21 21l-6 -6"></path>
+       </svg>
       </form>
 
       <!-- filter container -->
@@ -32,25 +37,29 @@
     </header>
 
     <!-- student container for searched students -->
-    <% const members = squad.members %>
-    <% for (let member = 0; member < members.length; member++){ %>
-    <section class="student-container">
-      <% if (members[member].avatar) { %>
-      <img class="student-image" src="<%= members[member].avatar %>" alt="student">
-      <% }else{ %>
-      <img class="placeholder-image" src="./assets/112855878.png" alt="Placeholder avatar" />
-      <% } %>
-      <div class="student-info">
-        <!-- staat standaard uit -->
-        <span class="only-name"><%= members[member].name %></span>
-        <h2 class="student-name"><%= members[member].name %> <%= members[member].surname %></h2>
-        <div class="student-website-links">
-          <a href="https://github.com/<%= members[member].gitHubHandle %>"><%= members[member].gitHubHandle %></a>
-          <a href="<%= members[member].website %>"><%= squad.name %></a>
+    <div class="desktop-student-containers">
+      <% const members = squad.members %>
+
+      <% for (let member = 0; member < members.length; member++){ %>
+      <section class="student-container">
+        <% if (members[member].avatar) { %>
+        <img class="student-image" src="<%= members[member].avatar %>" alt="student">
+        <% }else{ %>
+        <img class="placeholder-image" src="./assets/112855878.png" alt="Placeholder avatar" />
+        <% } %>
+        <div class="student-info">
+          <!-- staat standaard uit -->
+          <span class="only-name"><%= members[member].name %></span>
+          <h2 class="student-name"><%= members[member].name %> <%= members[member].surname %></h2>
+          <div class="student-website-links">
+            <a href="https://github.com/<%= members[member].gitHubHandle %>"><%= members[member].gitHubHandle %></a>
+            <a href="<%= members[member].website %>"><%= squad.name %></a>
+          </div>
         </div>
-      </div>
-    </section>
-    <% } %>
+      </section>
+      <% } %>
+    </div>
+
   </section>
 </main>
 
