@@ -242,7 +242,6 @@ section:nth-child(1) {
   align-items: flex-start;
   justify-content: flex-end;
   flex-grow: 0.25;
-  margin-bottom: 0.2em;
   margin-left: 1em;
   width: 75%;
 }
@@ -375,10 +374,10 @@ section:nth-child(1) {
 
   .student-image,
   .placeholder-image {
-    min-width: 7.25em;
-    max-width: 7.25em;
-    min-height: 7.25em;
-    max-height: 7.25em;
+    min-width: 7.3em;
+    max-width: 7.3em;
+    min-height: 7.3em;
+    max-height: 7.3em;
   }
 
   /* student info and links */
