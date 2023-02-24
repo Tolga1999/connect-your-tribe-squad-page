@@ -9,12 +9,14 @@
 :root {
   --background-color-white: #FFFF;
   --background-color-grey: #2B2B2B;
+  --background-color-black: #000000;
   --text-color-white: #FFFF;
   --text-color-black: #000000;
   --background-color-yellow: #FDFDBD;
   --background-color-green: #C8FFD4;
   --background-color-blue: #B8E8FC;
   --background-color-purple: #B1AFFF;
+  --hover-color-yellow: #FFD324;
 }
 
 /* import fonts */
@@ -145,6 +147,12 @@ svg {
   font-family: nunito-regular, sans-serif;
   margin-left: 0.75em;
   margin-bottom: 1rem;
+  transition: ease 1s;
+}
+
+.filter-container>a:hover{
+  background-color: var(--background-color-black);
+  color: var(--text-color-white);
 }
 
 /* filter container END */
@@ -158,7 +166,11 @@ svg {
   padding: 1em;
   justify-content: center;
   opacity: 1;
-  /* transition: ease 2s 2s; */
+  transition: ease 1s;
+}
+
+.student-container:hover{
+  transform: scale(1.05);
 }
 
 /* .student-container-on{
@@ -253,6 +265,12 @@ section:nth-child(1) {
   font-size: 0.7em;
   border-radius: 0.75em;
   font-family: nunito-regular, sans-serif;
+  transition: ease 1s;
+}
+
+.student-website-links>a:hover{
+  background-color: var(--background-color-black);
+  color: var(--text-color-white);
 }
 
 /* student container END */
