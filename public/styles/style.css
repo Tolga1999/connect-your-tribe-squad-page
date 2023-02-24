@@ -124,8 +124,8 @@ svg {
 
 .desktop-svg{
   position: absolute;
-  right: 1.5em;
-  bottom: 0.8em;
+  right: 1em;
+  bottom: 0.33em;
   display: none;
 }
 
@@ -299,18 +299,18 @@ section:nth-child(1) {
 
   /* logo title */
   .logo {
-    width: 9.6em;
-    height: 8.75em;
+    width: 7.92em;
+    height: 7.22em;
   }
 
   .title>h1 {
-    font-size: 4.17em;
+    font-size: 3.44em;
     font-weight: normal;
     margin-bottom: -0.075em
   }
 
   .title>span {
-    font-size: 1.17em;
+    font-size: 0.97em;
     margin-left: 0.4em;
   }
 
@@ -321,11 +321,11 @@ section:nth-child(1) {
     margin-top: 1.25em;
     padding: 1em;
     width: 100%;
-    height: 3.25em;
+    height: 2.7em;
     border: 1px solid;
     border-radius: 5em;
     font-family: inter-regular, sans-serif;
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 
   svg {
@@ -346,13 +346,13 @@ section:nth-child(1) {
 
   .filter-container>a {
     padding: 0.3em 0.8em;
-    font-size: 1.17em;
+    font-size: 0.8775em;
     margin-left: 0.75em;
     margin-bottom: 1rem;
   }
 
   .filter-container>span {
-    font-size: 1.67em;
+    font-size: 1.2525em;
   }
   /* filter container END */
 
@@ -364,8 +364,8 @@ section:nth-child(1) {
 
 .student-container {
   padding: 2em;
-  min-width: 30em;
-  max-width: 30em;
+  min-width: 25em;
+  max-width: 25em;
   margin: 1em;
 }
 
@@ -375,10 +375,10 @@ section:nth-child(1) {
 
   .student-image,
   .placeholder-image {
-    min-width: 8.25em;
-    max-width: 8.25em;
-    min-height: 8.25em;
-    max-height: 8.25em;
+    min-width: 7.25em;
+    max-width: 7.25em;
+    min-height: 7.25em;
+    max-height: 7.25em;
   }
 
   /* student info and links */
@@ -389,7 +389,7 @@ section:nth-child(1) {
   }
 
   .student-name {
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
   .student-website-links {
@@ -402,7 +402,7 @@ section:nth-child(1) {
 
   .student-website-links>a {
     padding: 0.3em 0.6em;
-    font-size: 1.05em;
+    font-size: 0.9em;
   }
   /* student container END */
 }
